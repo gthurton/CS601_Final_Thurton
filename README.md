@@ -1,7 +1,7 @@
 # CS601_Final_Thurton
 
 # Hosted website
-This site is hosted at: https://succinct-imported-cheese.glitch.me/
+This site is hosted at: https://cs601-final-thurton.glitch.me/
 
 # Project Goal
 The goal of this project is to introduce myself to the visitors of the page. I provide important information about me, from my education to my career to my resume. I also have a mini quiz at the end to test the user's knowledge
