@@ -1,0 +1,15 @@
+{
+  "degrees": [{
+    "school": "University of Pittsburgh",
+    "major": "Information Science",
+    "type": "BS",
+    "year": 2021
+  },
+{
+  "school": "Boston University",
+    "major": "Software Development",
+    "type": "MS",
+    "year": 2023
+}
+  ]
+}
