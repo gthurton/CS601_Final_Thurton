@@ -1,0 +1,195 @@
+@media (min-width: 700px){
+body {
+  background:  #eee6ea;
+  color: #5e3004;
+
+}
+}
+h1{
+  font-family: Georgia, Times, "Times New Roman", serif;
+  color: #f92cb5;
+  text-align: center;
+  text-shadow: 3px 5px 5px orange;
+}
+
+h3{
+  font-family: Georgia, Times, "Times New Roman", serif;
+  color: #c9084f;
+  text-align: center;
+  
+}
+
+a:link {
+  color:orange;
+  text-decoration:underline;
+}
+
+a:visited {
+  color:#f92cb5;
+  text-decoration:none;
+}
+
+a:hover {
+  color:black;
+  background-color:#d5f2bd;
+  text-decoration:underline;
+}
+
+nav{
+  display: flex;
+  text-align: center;
+  background-color: #4b433e;
+  font-size: 25px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+p{
+  text-align:center;
+
+}
+
+nav a:hover {
+
+  background-color: #f92cb5;
+  color: white;
+}
+
+nav a {
+  color:#f5dacc;
+  padding: 20px;
+  font-size: 20px;
+padding-top: 3px;
+
+}
+table, th, td {
+  border: 2px solid;
+  border-collapse: collapse;
+  border-color: orange;
+  background-color: #4b433e;
+  color: white;
+  width: 30%;
+  height: 30%;
+
+}
+
+.music{
+  display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.emailtype{
+  font-weight: bold;
+}
+
+.table{
+  display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+#resume{
+  width:650px;
+    height:750px;
+}
+
+footer{
+  background-color: #4b433e;
+ color: white;
+   position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+
+
+}
+
+
+@media (max-width: 600px) {
+  nav {
+    background-color: #694901;
+    
+  }
+
+      
+  h1{
+    color:#4b433e
+  }
+  body{
+    background:  #ffeab0;
+  }
+}
+
+button{
+  color:white;
+  background-color: 
+#864acf;
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;    /* Footer height */
+}
+
+.image {
+  width: 650px;
+  height: 750px;
+  margin: 2px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+#edu{
+   width: 700px;
+  height: 500px;
+}
+
+#connect{
+  width: 800px;
+  height: 350px;
+}
+
+#thanks{
+  width: 600px;
+  height: 500px;
+}
+
+#msg{
+   display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+#slct{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+#slct2{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
