@@ -1,0 +1,99 @@
+<!--Author: Gia Thurton-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="About me! Gallery page" />
+    <title>About Gia</title>
+    <link href="../css/style.css" rel="stylesheet" />
+
+  </head>
+  <body>
+    <header>
+      <p>About Gia</p>
+    </header>
+    <nav>
+      <a href="../index.html">Homepage</a>
+      <a href="career.html">Career</a>
+      <a href="education.html">Education</a>
+      <a href="interests.html">Hobbies and Interests</a>
+      <a href="contact.html">Contact Info</a>
+      <a href="resume.html">Resume</a>
+      <a href="quiz.html">Quiz</a>
+    </nav>
+<div id="page-container">
+    <main>
+      <div id="content-wrap">
+      <h1>Quiz</h1>
+        <h3>
+          Thanks for visiting my page! Feel free to take this mini quiz about me
+        </h3>
+      <section>
+        <script type="importmap">
+  {
+    "imports": {
+      "vue": "https://unpkg.com/vue@3/dist/vue.esm-browser.js"
+    }
+  }
+</script>
+        
+      <script type="module">
+import { createApp } from 'vue'
+
+createApp({
+  data() {
+    return {
+      
+      selected: ''
+      
+    }
+  }
+}).mount('#app')
+</script>
+        
+        
+
+<div id="app">
+        <img id="thanks"  src="https://cdn.glitch.global/349cd537-a768-465f-afcf-c32a3b5710fb/Thank-you-transparent.svg.png?v=1655770239072">
+      <p>
+        Which of the following programming laguages have I <strong> NOT</strong> learned? 
+        </p>
+        
+  <select v-model="selected" >
+    <option disabled value="">Please select one</option>
+    <option>Java</option>
+    <option>Python</option>
+    <option>.NET</option>
+    <option>PHP</option>
+  </select>
+         <span>Selected: {{ selected }}</span>
+ <button onclick="showAnswer()">Show Answer</button>
+
+<div id="answer" style="display:none">
+<p>
+  Correct Answer: Python
+  </p>
+</div>
+  <script>
+function showAnswer() {
+  var tog = document.getElementById("answer");
+  
+  if (tog.style.display === "none") {
+    tog.style.display = "block";
+  } else {
+    tog.style.display = "none";
+  }
+}
+</script>
+ 
+        </div>
+        
+        </section>
+      </div>
+    </main>
+    <footer>
+      <p>Author: Gia Thurton</p>
+    </footer>
+    </div>
+  </body>
+</html>

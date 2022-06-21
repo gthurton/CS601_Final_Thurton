@@ -1,0 +1,81 @@
+<!--Author: Gia Thurton-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="About me! Resume page" />
+    <title>About Gia</title>
+    <link href="../css/style.css" rel="stylesheet" />
+     <script src="https://unpkg.com/vue@2"></script>
+  </head>
+  <body>
+    <header>
+      <p>About Gia</p>
+    </header>
+    <nav>
+      <a href="../index.html">Homepage</a>
+      <a href="career.html">Career</a>
+      <a href="education.html">Education</a>
+      <a href="interests.html">Hobbies and Interests</a>
+      <a href="contact.html">Contact Info</a>
+      <a href="resume.html">Resume</a>
+      <a href="quiz.html">Quiz</a>
+    </nav>
+<div id="page-container">
+    <main>
+      <script>
+        alert("Please click on the image to switch between pages of my resume");
+      </script>
+      <div id="content-wrap">
+      <h1>My Resume</h1>
+      <section>
+        
+         <div id="app">
+      <img
+        v-if="image"
+        @click="nextImage"
+        class="image"
+        :src="image.src"
+        alt="image.alt"
+      />
+        </div>
+       
+    <script>
+      var app = new Vue({
+        el: "#app",
+        data() {
+          return {
+            i: 0,
+            image: null,
+            images: [
+              {
+                src: "https://cdn.glitch.global/349cd537-a768-465f-afcf-c32a3b5710fb/resume1.png?v=1655759818964",
+                alt: "Resume Page 1"
+              },
+              {
+                src: "https://cdn.glitch.global/349cd537-a768-465f-afcf-c32a3b5710fb/resume2.png?v=1655759885288",
+                alt: "Resume Page 2"
+              }
+            ]
+          };
+        },
+        mounted() {
+          this.nextImage();
+        },
+        methods: {
+          nextImage() {
+            this.image = this.images[this.i];
+            this.i = (++this.i) % 2;
+          }
+        }
+      });
+    </script>
+           </section>
+      </div>
+    </main>
+    <footer>
+      <p>Author: Gia Thurton</p>
+    </footer>
+    </div>
+  </body>
+</html>
